@@ -1,4 +1,4 @@
-#Traffic Sign Recognition
+# **Traffic Sign Recognition**
 
 
 
@@ -21,7 +21,8 @@ The goals / steps of this project are the following:
 
 
 ###Data Set Summary & Exploration
-####1. Basic summary of the data set
+
+#### 1. Basic summary of the data set
 
 
 I used the numpy library to calculate summary statistics of the traffic
@@ -33,7 +34,7 @@ signs data set:
 * The shape of a traffic sign image is (32, 32, 3).
 * The number of unique classes/labels in the data set is 43.
 
-####2. Include an exploratory visualization of the dataset.
+#### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a histogram showing how many examples for each label we have in the training data.
 
@@ -47,7 +48,8 @@ Additionally, here is an example of 32 by 32 image from the training data.
 
 
 ###Design and Test a Model Architecture
-####1. Preprocessing the data
+
+#### 1. Preprocessing the data
 
 As a first step, I decided to convert the images to grayscale because the shapes of and on the sign are more important than the  colors. Moreover, it reduces the size of the training data and makes training faster.  
 
@@ -75,7 +77,7 @@ def normalized(XX):
 I generated additional data for labels with a small number of examples by translating and scaling images with these labels. But just improving  LeNet gives better results. So this is not included in the final submission.
 
 
-####2. Final model architecture
+#### 2. Final model architecture
 
 My final model is the neural network LeNet with an additional dropout and consists of the following layers:
 
@@ -96,11 +98,11 @@ My final model is the neural network LeNet with an additional dropout and consis
 
 
 
-####3. Training the model
+#### 3. Training the model
 
 To train the model, I used an AdamOptimizer,  batch size of 128, number of epochs of 18, a keep probability of 0.6 and a learning rate of 0.001.
 
-####4. Final solution and accuracy
+#### 4. Final solution and accuracy
 
 My final model results were:
 * training set accuracy of 0.999
@@ -117,7 +119,7 @@ A validation set accuracy of 0.963 and test set accuracy of 0.937 are excellent 
 
 ###Test the Model on New Images
 
-####1. Applying the model to  five German traffic signs found on the web
+#### 1. Applying the model to  five German traffic signs found on the web
 
 Here are five German traffic signs that I found on the web:
 
@@ -126,7 +128,7 @@ Here are five German traffic signs that I found on the web:
 I cut them in squares by hand and then rescaled them to be 32 by 32.
 
 
-####2. Model predictions on these new traffic signs
+#### 2. Model predictions on these new traffic signs
 
 Here are the results of the prediction:
 
@@ -141,7 +143,7 @@ Here are the results of the prediction:
 
 The model was able to correctly classify 5 of the 5 traffic signs, which gives an accuracy of 100%. This speak for the model.
 
-####3. Top 5 softmax probabilities
+#### 3. Top 5 softmax probabilities
 
 The top five soft max probabilities were
 
