@@ -20,7 +20,7 @@ The goals / steps of this project are the following:
 ---
 
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
 #### 1. Basic summary of the data set
 
@@ -47,7 +47,7 @@ Additionally, here is an example of 32 by 32 image from the training data.
 
 
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
 #### 1. Preprocessing the data
 
@@ -117,7 +117,7 @@ A validation set accuracy of 0.963 and test set accuracy of 0.937 are excellent 
 
 
 
-###Test the Model on New Images
+### Test the Model on New Images
 
 #### 1. Applying the model to  five German traffic signs found on the web
 
